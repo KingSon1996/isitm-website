@@ -7,8 +7,8 @@ freezer = Freezer(app)
 
 @freezer.register_generator
 def static_files():
-    # 确保静态文件被正确复制
-    pass
+    # 返回一个空列表而不是None
+    return []
 
 if __name__ == '__main__':
     # 生成静态文件
